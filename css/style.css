@@ -1,0 +1,52 @@
+body{
+    background: rgb(28,18,27);
+    background: linear-gradient(90deg, rgba(28,18,27,1) 0%, rgba(54,32,51,1) 100%);
+}
+
+.link-1, .link-2, .link-3, .text{
+    opacity: 0;
+}
+
+@keyframes logo {
+    from {
+        transform: translateY(20px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes text {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes link {
+    0% {
+        width: 4rem;
+        opacity: 0%;
+    }
+    50%{
+        width: 5rem;
+    }
+    100% {
+        width: 4rem;
+        opacity: 100%;
+    }
+}
+
+.link-1, .link-2, .link-3{
+    width: 4rem;
+    transition: 1s ease;
+}
+
+.link-1:hover, .link-2:hover, .link-3:hover{
+    width: 5rem;
+    transition: 1s ease;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
@@ -11,11 +11,18 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.config.js"></script>
-    <script src="js/script.js"></script>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <main class="h-screen flex justify-center items-center flex-col text-center flex-wrap">
+        <img src="img/full.png" alt="Qualsu Logo" class="logo w-[32rem] drop-shadow-xl p-4">
+        <h1 class="text text-3xl m-2 drop-shadow-xl text-white break-normal">Мы - создаем будущие</h1>
+
+        <div class="flex flex-row m-2">
+            <a href="" class="link"><img src="img/vk.png" alt="vk btn" class="link-1 w-16 m-4 p-1 shadow-2xl drop-shadow-xl shadow-main-whitepurple rounded-lg"></a>
+            <a href="" class="link"><img src="img/github.png" alt="github btn" class="link-2 w-16 m-4 p-1 shadow-2xl drop-shadow-xl shadow-main-whitepurple rounded-lg"></a>
+            <a href="" class="link"><img src="img/telegram.png" alt="telegram btn" class="link-3 w-16 m-4 p-1 shadow-2xl drop-shadow-xl shadow-main-whitepurple rounded-lg"></a>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>

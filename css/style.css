@@ -29,24 +29,24 @@ body{
 
 @keyframes link {
     0% {
-        width: 4rem;
+        transform: scale(1);
         opacity: 0%;
     }
     50%{
-        width: 5rem;
+        transform: scale(1.3);
     }
     100% {
-        width: 4rem;
+        transform: scale(1);
         opacity: 100%;
     }
 }
 
 .link-1, .link-2, .link-3{
-    width: 4rem;
-    transition: 1s ease;
+    transform: scale(1);    
+    transition: 0.5s ease;
 }
 
 .link-1:hover, .link-2:hover, .link-3:hover{
-    width: 5rem;
-    transition: 1s ease;
+    transform: scale(1.2);
+    transition: 0.5s ease;
 }

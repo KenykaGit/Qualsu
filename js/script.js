@@ -8,7 +8,7 @@ const link3Element = document.querySelector('.link-3');
 logoElement.style.animation = 'logo 1s ease-in-out forwards';
 
 logoElement.addEventListener('animationend', () => {
-  textElement.style.animation = 'text 2s ease forwards';
+  textElement.style.animation = 'text 1.5s ease forwards';
 
     textElement.addEventListener('animationend', () => {
         link1Element.style.opacity = 1;
@@ -26,7 +26,6 @@ logoElement.addEventListener('animationend', () => {
                     link1Element.style.animation = '';
                     link2Element.style.animation = '';
                     link3Element.style.animation = '';
-                    
                 });
             });
         });

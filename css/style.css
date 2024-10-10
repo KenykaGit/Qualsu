@@ -3,7 +3,7 @@ body{
     background: linear-gradient(90deg, rgba(28,18,27,1) 0%, rgba(54,32,51,1) 100%);
 }
 
-.link-1, .link-2, .link-3, .text{
+.link-1, .link-2, .link-3, .text, .border-line{
     opacity: 0;
 }
 
@@ -41,6 +41,21 @@ body{
     }
 }
 
+@keyframes product {
+    0%{
+        opacity: 0%;
+        filter: grayscale(1);
+        transform: translateY(15px);
+    }
+    60%{
+        filter: grayscale(0);
+    }
+    100%{
+        opacity: 50%;
+        transform: translateY(0px);
+    }
+}
+
 .link-1, .link-2, .link-3{
     transform: scale(1);    
     transition: 0.5s ease;
@@ -49,4 +64,24 @@ body{
 .link-1:hover, .link-2:hover, .link-3:hover{
     transform: scale(1.2);
     transition: 0.5s ease;
+}
+
+.product-1, .product-2, .product-3, .product-4{
+    filter: grayscale(1);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.product-1:hover, .product-2:hover, .product-3:hover, .product-4:hover{
+    filter: grayscale(0);
+    opacity: 100;
+    transition: 0.5s ease;
+}
+
+.product-1.visible, .product-2.visible, .product-3.visible, .product-4.visible {
+    opacity: 0.5;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }

@@ -13,12 +13,14 @@ const product1 = document.querySelector('.product-1');
 const product2 = document.querySelector('.product-2');
 const product3 = document.querySelector('.product-3');
 const product4 = document.querySelector('.product-4');
-const products = [product1, product2, product3, product4]
+const product5 = document.querySelector('.product-5');
+const products = [product1, product2, product3, product4, product5]
 
 product1.classList.add("hidden")
 product2.classList.add("hidden")
 product3.classList.add("hidden")
 product4.classList.add("hidden")
+product5.classList.add("hidden")
 
 logoElement.style.animation = 'logo 1s ease-in-out forwards';
 
@@ -58,11 +60,13 @@ logoElement.addEventListener('animationend', () => {
                     product2.classList.remove("hidden")
                     product3.classList.remove("hidden")
                     product4.classList.remove("hidden")
+                    product5.classList.remove("hidden")
 
                     product1.style.animation = 'product 1s ease 0ms';
                     product2.style.animation = 'product 1s ease 100ms';
                     product3.style.animation = 'product 1s ease 200ms';
                     product4.style.animation = 'product 1s ease 300ms';
+                    product5.style.animation = 'product 1s ease 300ms';
 
                     product1.addEventListener('animationend', () => {
                         product1.classList.add('visible');
@@ -77,11 +81,16 @@ logoElement.addEventListener('animationend', () => {
                     })
 
                     product4.addEventListener('animationend', () => {
+                        product4.classList.add('visible');
+                    })
+
+                    product5.addEventListener('animationend', () => {
                         product1.style.animation = '';
                         product2.style.animation = '';
                         product3.style.animation = '';
                         product4.style.animation = '';
-                        product4.classList.add('visible');
+                        product5.style.animation = '';
+                        product5.classList.add('visible');
                     })
 
                 });

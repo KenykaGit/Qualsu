@@ -66,19 +66,19 @@ body{
     transition: 0.5s ease;
 }
 
-.product-1, .product-2, .product-3, .product-4{
+.product-1, .product-2, .product-3, .product-4, .product-5{
     filter: grayscale(1);
     transition: 0.5s ease;
     opacity: 0;
 }
 
-.product-1:hover, .product-2:hover, .product-3:hover, .product-4:hover{
+.product-1:hover, .product-2:hover, .product-3:hover, .product-4:hover, .product-5:hover{
     filter: grayscale(0);
     opacity: 100;
     transition: 0.5s ease;
 }
 
-.product-1.visible, .product-2.visible, .product-3.visible, .product-4.visible {
+.product-1.visible, .product-2.visible, .product-3.visible, .product-4.visible, .product-5.visible{
     opacity: 0.5;
 }
 

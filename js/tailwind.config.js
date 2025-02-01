@@ -15,8 +15,8 @@ tailwind.config = {
             cloud: "#FFFFFF"
           },
           notter:{
-            n: "#FFE785",
-            otter: "#D2D2D2"
+            n: "#FFCC00",
+            otter: "#D7D7D7"
           },
           shortul:{
             short: "#8592FF",
